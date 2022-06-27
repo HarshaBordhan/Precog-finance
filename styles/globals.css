@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,377 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@layer utilities {
+  .contain {
+    background: rgb(16, 15, 25);
+    padding-bottom: 270px;
+  }
+
+  .navbar {
+    height: 95px;
+    margin: 0px 130px;
+  }
+
+  .checkbtn {
+    display: none;
+    position: absolute;
+    right: 36px;
+    top: 30px;
+  }
+
+  /* .menu {
+    position: relative;
+    cursor: pointer;
+  } */
+
+  /* .close {
+    position: relative;
+    cursor: pointer;
+  } */
+
+  input#check {
+    position: absolute;
+    display: none;
+    right: 38px;
+    top: 32px;
+  }
+
+  ul.navList {
+    width: 36%;
+  }
+
+  a.active {
+    color: rgb(104, 226, 227);
+  }
+
+  div.first {
+    background-color: rgb(33, 31, 51);
+    height: 315px;
+    margin: 0px 130px;
+  }
+
+  div.firstText {
+    width: 380px;
+    left: 215px;
+    position: absolute;
+  }
+
+  span.firstTitle {
+    font-family: "Franklin Gothic Medium Cond", "Arial Narrow", Arial,
+      sans-serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    line-height: 41px;
+    /* color: rgb(255, 255, 255); */
+  }
+
+  span.firstImg {
+    position: absolute;
+    width: 520px;
+    /* height: 262px; */
+    left: 765px;
+    top: 102px;
+  }
+
+  div.second {
+    height: 265px;
+    padding-right: 385px;
+    padding-left: 225px;
+    padding-top: 48px;
+    margin: 0px 130px;
+  }
+
+  span.secondTitle {
+    font-family: "Franklin Gothic Medium Cond", "Arial Narrow", Arial,
+      sans-serif;
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 2.25rem;
+    line-height: 80px;
+    /* color: rgb(255, 255, 255); */
+  }
+
+  section.sec {
+    display: flex;
+    justify-items: space-evenly;
+  }
+
+  div.sectionDiv {
+    width: 338px;
+    padding: 25px;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  /* .sectionImg {
+    width: 3rem;
+    height: 3rem;
+  } */
+
+  .sectionHeading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    font-family: "Franklin Gothic Medium Cond", "Arial Narrow", Arial,
+      sans-serif;
+    margin: 15px 0px;
+  }
+
+  a.sectionTitle {
+    display: flex;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(29, 232, 233);
+    font-weight: 500;
+    width: 108px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 75px;
+  }
+  p.sectionPara {
+    height: 64px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  /* .btn {
+    width: 0.875rem;
+    height: 0.875rem;
+  } */
+  div.sectionFirst {
+    background-color: rgb(33, 31, 51);
+  }
+  div.sectionSecond {
+    background-color: rgb(97, 43, 245);
+  }
+  div.sectionThird {
+    background-color: rgb(112, 227, 114);
+    color: rgb(16, 15, 25);
+  }
+  div.sectionThird a.sectionTitle {
+    color: rgb(16, 15, 25);
+  }
+  div.sectionFourth {
+    background-color: rgb(33, 31, 51);
+  }
+
+  @media (max-width: 1280px) {
+    .navbar {
+      margin: 0px 60px;
+    }
+
+    ul.navList {
+      width: 46%;
+    }
+
+    div.first {
+      margin: 0px 60px;
+    }
+
+    div.firstText {
+      left: 128px;
+    }
+    span.firstImg {
+      left: 600px;
+    }
+
+    div.second {
+      margin: 0px 60px;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    div.firstText {
+      width: 250px;
+    }
+    span.firstImg {
+      width: 440px;
+      left: 475px;
+    }
+
+    div.second {
+      height: 280px;
+      padding: 60px 180px;
+    }
+  }
+
+  @media (max-width: 950px) {
+    nav.navbar {
+      margin: 0px 15px;
+    }
+
+    ul.navList {
+      width: 56%;
+    }
+
+    div.first {
+      margin: 0px 15px;
+    }
+
+    div.firstText {
+      left: 78px;
+    }
+
+    span.firstImg {
+      left: 405px;
+    }
+
+    div.second {
+      margin: 0px 15px;
+    }
+  }
+
+  @media (max-width: 875px) {
+    div.firstText {
+      left: 40px;
+    }
+    span.firstImg {
+      left: 305px;
+    }
+    section.sec {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+    }
+
+    div.sectionDiv {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    /* ul.navList {
+      width: 66%;
+    } */
+
+    div.first {
+      margin: 0px 0px;
+    }
+
+    span.firstImg {
+      width: 360px;
+      height: 260px;
+    }
+
+    div.second {
+      margin: 0px 0px;
+    }
+  }
+
+  @media (max-width: 690px) {
+    /* nav.navbar {
+      position: ;
+    } */
+
+    ul.navList li {
+      height: 45px;
+    }
+
+    div.first {
+      justify-content: space-evenly;
+      padding: 0px 20px;
+    }
+
+    div.firstText {
+      position: unset;
+      width: 180px;
+    }
+
+    span.firstImg {
+      position: unset;
+      width: 258px;
+      height: 180px;
+    }
+
+    div.firstText span {
+      font-size: 1.875rem;
+    }
+
+    div.second {
+      padding: 75px 30px;
+    }
+    div.second span {
+      font-size: 1.875rem;
+    }
+
+    ul.navList {
+      flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+      width: 50%;
+      height: 62vh;
+      background-color: rgb(16, 15, 25);
+      top: 85px;
+      right: 0;
+      left: 10px;
+      opacity: 0;
+      padding-left: 0;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+      /* transition: transform 0.3s ease; */
+      margin: 0;
+      z-index: 1;
+    }
+
+    .checkbtn {
+      display: block;
+    }
+
+    .checkbtn span.menu {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(47deg)
+        brightness(100%) contrast(103%);
+    }
+    .checkbtn span.close {
+      /* opacity: 0; */
+      display: none;
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(47deg)
+        brightness(100%) contrast(103%);
+    }
+
+    #check:checked ~ ul.navList {
+      transform: scaleX(1);
+      /* transition: opacity 0.3s ease; */
+      opacity: 1;
+    }
+
+    #check:checked ~ .checkbtn span.menu {
+      display: none;
+      /* opacity: 0; */
+    }
+
+    #check:checked ~ .checkbtn span.close {
+      display: block;
+    }
+  }
+
+  @media (max-width: 380px) {
+    div.first {
+      height: 340px;
+    }
+
+    div.firstText {
+      position: unset;
+      width: 160px;
+    }
+
+    span.firstImg {
+      position: unset;
+      width: 210px;
+      height: 150px;
+    }
+
+    section.sec {
+      display: grid;
+      grid-template-columns: 1fr;
+      /* grid-template-rows: ; */
+      justify-items: center;
+    }
+
+    div.sectionDiv {
+      width: 100%;
+    }
+  }
 }
