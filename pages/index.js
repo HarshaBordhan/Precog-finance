@@ -70,7 +70,7 @@ export default function Home() {
         <div className="second">
           <span className="secondTitle font-extrabold">Our commitments</span>
           <p>
-            We believe that companies that can do more, should That's why we
+            We believe that companies that can do more, should That&#39;s why we
             focus on four key areas in which technology can and myst benefit the
             future of humanity and our planet.
           </p>
@@ -120,8 +120,8 @@ export default function Home() {
             <h3 className="sectionHeading">Sustainable future</h3>
             <p className="sectionPara">
               We must address climate change for a more sustainable future.
-              That's why we've set ambitious comitments and have detailed plans
-              to achieve them
+              That&#39;s why we&#39;ve set ambitious comitments and have
+              detailed plans to achieve them
             </p>
             <a className="sectionTitle" href="#">
               LEARN MORE{" "}
